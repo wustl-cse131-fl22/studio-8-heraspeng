@@ -1,5 +1,6 @@
 package studio8;
 
+import java.util.LinkedList;
 import java.util.Objects;
 
 public class Time {
@@ -20,8 +21,23 @@ public class Time {
 		isTwentyFour = i;
 	}
 	public static void main(String[] args) {
-		Time nTime = new Time(15,2,57,true);
-		System.out.println(nTime.timeToString());
+		Time nTime = new Time(1,2,57,true);
+		//System.out.println(nTime.timeToString());
+		Time jTime = new Time(5,2,47,true);
+		Time kTime = new Time(15,2,28,true);
+		Time lTime = new Time(13,2,47,true);
+		Time gTime = new Time(11,6,7,true);
+		LinkedList<Time> list = new LinkedList<Time>();
+		list.add(nTime);
+		list.add(jTime);
+		list.add(kTime);
+		list.add(lTime);
+		list.add(gTime);
+		System.out.println(list);
+		
+		
+		
+		
     	
     }
 	public String timeToString() {

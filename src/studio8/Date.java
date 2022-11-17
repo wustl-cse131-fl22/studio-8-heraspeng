@@ -1,5 +1,6 @@
 package studio8;
 
+import java.util.LinkedList;
 import java.util.Objects;
 
 public class Date {
@@ -55,7 +56,26 @@ public class Date {
 	}
 	public static void main(String[] args) {
 		Date nDate = new Date(2003,9,24,true);
-		System.out.println(nDate.dateToString());
+		//System.out.println(nDate.dateToString());
+		
+		Date jDate = new Date(2003,9,24,false);
+		//System.out.println(nDate.equals(jDate));
+		
+		Date iDate = new Date(2002,15,12,false);
+		
+		Date pDate = new Date(2004,4,27,false);
+		
+		Date rDate = new Date(2003,1,28,false);
+		
+		LinkedList<Date> list = new LinkedList<Date>();
+		list.add(nDate);
+		list.add(jDate);
+		list.add(iDate);
+		list.add(pDate);
+		list.add(rDate);
+		System.out.println(list);
+		
+		
     }
 
 }
